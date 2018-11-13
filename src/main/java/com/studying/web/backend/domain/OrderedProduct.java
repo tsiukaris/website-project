@@ -30,7 +30,4 @@ public class OrderedProduct {
     public OrderedProduct(){
     }
 
-    public OrderedProduct(int quantity){
-        this.quantity = quantity;
-    }
 }
