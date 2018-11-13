@@ -72,7 +72,7 @@ http://localhost:3000
 ![Products](screenshots/store-page.png)
 * Product page where you can add this item to your cart
 ![Product Page](screenshots/product-page.png)
-* Cart page where you can see your added items and send a request to the server for creating new order with exact Customer ID
+* Cart page where user can see added items and send a request to the server for creating new order
 ![Cart](screenshots/cart.png)
 * Page for creating new product
 ![Create Product](screenshots/create-product-page.png)
