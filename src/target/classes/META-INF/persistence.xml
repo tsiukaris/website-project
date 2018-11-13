@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<persistence xmlns="http://java.sun.com/xml/ns/persistence"
+             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xsi:schemaLocation="http://java.sun.com/xml/ns/persistence
+   http://java.sun.com/xml/ns/persistence/persistence_1_0.xsd"
+             version="1.0">
+
+    <persistence-unit name="1" transaction-type="RESOURCE_LOCAL">
+        <!--<provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>-->
+        <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
+        <class>com.studying.web.backend.domain.Customer</class>
+        <!--<class>src.entities.StudentAddress</class>-->
+        <class>com.studying.web.backend.domain.Product</class>
+        <class>com.studying.web.backend.domain.Orders</class>
+        <class>com.studying.web.backend.domain.OrderedProduct</class>
+        <properties>
+            <property name="javax.persistence.schema-generation.database.action" value="drop-and-create"/>
+            <property name="javax.persistence.jdbc.driver" value="org.postgresql.Driver"/> <!-- DB Driver -->
+            <property name="javax.persistence.jdbc.url" value="jdbc:postgresql://localhost/testdb"/> <!-- BD Mane -->
+            <property name="javax.persistence.jdbc.user" value="postgres"/> <!-- DB User -->
+            <property name="javax.persistence.jdbc.password" value="postgre"/> <!-- DB Password -->
+
+            <!--<property name="hibernate.dialect" value="org.hibernate.dialect.PostgreSQLDialect"/> &lt;!&ndash; DB Dialect &ndash;&gt;-->
+            <property name="hibernate.hbm2ddl.auto" value="create-drop"/> <!-- create / create-drop / update -->
+
+            <!--<property name="hibernate.show_sql" value="true"/> &lt;!&ndash; Show SQL in console &ndash;&gt;-->
+            <!--<property name="hibernate.format_sql" value="true"/> &lt;!&ndash; Show SQL formatted &ndash;&gt;-->
+        </properties>
+    </persistence-unit>
+</persistence>
