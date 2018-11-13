@@ -83,7 +83,7 @@ http://localhost:3000
 
 
 ## Database
-Here is a presentation of database diagram
+Here is a presentation of database diagram  
 ![Database-diagram](screenshots/database-diagram.png)
 
 
