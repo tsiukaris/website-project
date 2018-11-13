@@ -66,17 +66,17 @@ http://localhost:3000
 
 ## Website functionality
 
-* Navigation bar on the top of all pages
+* Navigation bar on the top of all pages  
 ![navbar](screenshots/navbar.png)
-* Visual presentation of products on responsible store page
+* Visual presentation of products on responsible store page  
 ![Products](screenshots/store-page.png)
-* Product page where you can add this item to your cart
+* Product page where you can add this item to your cart  
 ![Product Page](screenshots/product-page.png)
-* Cart page where user can see added items and send a request to the server for creating new order
+* Cart page where user can see added items and send a request to the server for creating new order  
 ![Cart](screenshots/cart.png)
-* Page for creating new product in database
+* Page for creating new product in database  
 ![Create Product](screenshots/create-product-page.png)
-* Page where showed all existing customers
+* Page where showed all existing customers  
 ![Customers](screenshots/customers-page.png)
-* Customer page with all information about customer and his orders (by click)
+* Customer page with all information about customer and his orders (by click)  
 ![Customer page with orders](screenshots/customer-page.png)
