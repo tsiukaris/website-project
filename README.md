@@ -63,6 +63,8 @@ You can see the result at home page:
 ```
 http://localhost:3000
 ```
+Database is not exported into project yet, but you can see the diagram of DB and screenshots of loaded products, customers and orders below.
+
 
 ## Website functionality
 
