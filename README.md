@@ -1,7 +1,6 @@
-# Website with Spring Boot and ReactJS
+# Website Market on Spring Boot and ReactJS
 
-This project was developed for studying purposes of current technologies.
-Backend  
+This project was developed for studying purposes of current technologies. 
 
 ## Technologies and Patterns
 
@@ -60,4 +59,24 @@ WebApplication class with method main is located at
 src/main/java/com/studying/web
 ```
 
-The result you can see 
+The result you can see at home page:
+```
+http://localhost:3000
+```
+
+## Website functionality
+
+* Navigation bar on the top of all pages
+![navbar](screenshots/navbar.png)
+* Visual presentation of products on responsible store page
+![Products](screenshots/store-page.png)
+* Product page where you can add this item to your cart
+![Product Page](screenshots/product-page.png)
+* Cart page where you can see your added items and send a request to the server for creating new order with exact Customer ID
+![Cart](screenshots/cart.png)
+* Page for creating new product
+![Create Product](screenshots/create-product-page.png)
+* Page where showed all existing customers
+![Customers](screenshots/customers-page.png)
+* Customer page with all information about customer and his orders (by click)
+![Customer page with orders](screenshots/customer-page.png)
