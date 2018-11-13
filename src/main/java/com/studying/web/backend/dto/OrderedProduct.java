@@ -1,4 +1,4 @@
-package com.studying.web.backend.domain;
+package com.studying.web.backend.dto;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.Getter;

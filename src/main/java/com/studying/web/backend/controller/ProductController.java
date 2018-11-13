@@ -1,7 +1,7 @@
 package com.studying.web.backend.controller;
 
 
-import com.studying.web.backend.domain.Product;
+import com.studying.web.backend.dto.Product;
 import com.studying.web.backend.exception.ResourceNotFoundException;
 import com.studying.web.backend.repository.ProductRepository;
 import com.studying.web.backend.repository.OrderedProductRepository;

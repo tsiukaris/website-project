@@ -1,6 +1,6 @@
 package com.studying.web.backend.repository;
 
-import com.studying.web.backend.domain.Orders;
+import com.studying.web.backend.dto.Orders;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

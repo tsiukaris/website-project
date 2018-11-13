@@ -1,9 +1,9 @@
 package com.studying.web.backend.controller;
 
-import com.studying.web.backend.domain.Customer;
-import com.studying.web.backend.domain.OrderedProduct;
-import com.studying.web.backend.domain.Orders;
-import com.studying.web.backend.domain.Product;
+import com.studying.web.backend.dto.Customer;
+import com.studying.web.backend.dto.OrderedProduct;
+import com.studying.web.backend.dto.Orders;
+import com.studying.web.backend.dto.Product;
 import com.studying.web.backend.repository.CustomerRepository;
 import com.studying.web.backend.repository.ProductRepository;
 import com.studying.web.backend.repository.OrderRepository;

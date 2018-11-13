@@ -59,7 +59,7 @@ WebApplication class with method main is located at
 src/main/java/com/studying/web
 ```
 
-The result you can see at home page:
+You can see the result at home page:
 ```
 http://localhost:3000
 ```
@@ -68,7 +68,7 @@ http://localhost:3000
 
 * Navigation bar on the top of all pages  
 ![navbar](screenshots/navbar.png)
-* Visual presentation of products on responsible store page  
+* Visual presentation of dynamically loaded products on responsible store page  
 ![Products](screenshots/store-page.png)
 * Product page where you can add this item to your cart  
 ![Product Page](screenshots/product-page.png)
@@ -76,7 +76,26 @@ http://localhost:3000
 ![Cart](screenshots/cart.png)
 * Page for creating new product in database  
 ![Create Product](screenshots/create-product-page.png)
-* Page where showed all existing customers  
+* Page of all dynamically loaded customers
 ![Customers](screenshots/customers-page.png)
 * Customer page with all information about customer and his orders (by click)  
 ![Customer page with orders](screenshots/customer-page.png)
+
+
+## Database
+Here is a presentation of database diagram
+![Database-diagram](screenshots/database-diagram.png)
+
+
+## REST web service
+Data exchange between the client and the web service of the website is in JSON format.
+
+Client requests (such GET all products, GET product details or customer's orders, POST new product or customer and etc.) 
+are handled by Axios JS library.
+
+
+## ReactJS components
+Website is divided into stateless or presentational components (like a NavBar, ToolBar, Home 
+and other stateless components for their container-components) 
+and container components with logic inside (at frontend/src/components). 
+All container components use redux store for managing needed state.

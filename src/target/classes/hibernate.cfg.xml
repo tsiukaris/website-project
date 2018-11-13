@@ -19,10 +19,10 @@
         <property name="hibernate.hbm2ddl.auto">update</property>
         <property name="hibernate.show_sql">true</property>
 
-        <mapping class="com.studying.web.backend.domain.Customer"/>
-        <mapping class="com.studying.web.backend.domain.Orders"/>
-        <mapping class="com.studying.web.backend.domain.Product"/>
-        <mapping class="com.studying.web.backend.domain.OrderedProduct"/>
+        <mapping class="com.studying.web.backend.dto.Customer"/>
+        <mapping class="com.studying.web.backend.dto.Orders"/>
+        <mapping class="com.studying.web.backend.dto.Product"/>
+        <mapping class="com.studying.web.backend.dto.OrderedProduct"/>
 
 
 

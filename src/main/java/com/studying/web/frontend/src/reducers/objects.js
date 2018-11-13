@@ -1,6 +1,5 @@
 export const SAVE_ALL = 'SAVE_ALL';
 export const SAVE_PRODUCT = 'SAVE_PRODUCT';
-export const SET_CLICKEDPROD = 'SET_CLICKEDPROD';
 export const ADD_TO_CART = 'ADD_TO_CART';
 export const SET_CUSTOMERS = 'SET_CUSTOMERS';
 export const SET_CUSTOMER = 'SET_CUSTOMER';
