@@ -74,7 +74,7 @@ http://localhost:3000
 ![Product Page](screenshots/product-page.png)
 * Cart page where user can see added items and send a request to the server for creating new order
 ![Cart](screenshots/cart.png)
-* Page for creating new product
+* Page for creating new product in database
 ![Create Product](screenshots/create-product-page.png)
 * Page where showed all existing customers
 ![Customers](screenshots/customers-page.png)
