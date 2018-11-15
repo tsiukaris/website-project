@@ -35,7 +35,7 @@ public class OrderController {
     }
 
     @PostMapping("/api/newOrder/{customerid}")
-    public String createNewOrder(@PathVariable int customerid, @RequestBody Map<String, Integer> mapOfProductIdAndQuantity) throws NoSuchElementException{
+    public String createNewOrder(@PathVariable int customerid, @RequestBody Map<String, Integer> mapOfProductIdAndQuantity){
 
         Orders order = new Orders();
         OrderedProduct[] orderedProducts = new OrderedProduct[mapOfProductIdAndQuantity.size()];
@@ -72,7 +72,6 @@ public class OrderController {
         String UrlToCustomerOrders = "http://localhost:8080/api/customers/" + customerid + "/orders";
 
         return UrlToCustomerOrders;
-        /*I know that no order in DB was created yet,
-        so I will redirect the client to his orders page*/
+        /*Redirect to clients*/
     }
 }
