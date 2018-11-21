@@ -13,6 +13,7 @@ This project was developed for studying purposes of current technologies.
 * [Axios](https://github.com/axios/axios) - JS library for http requests
 * [Maven](https://maven.apache.org/) - Dependency Management
 * [Tomcat](http://tomcat.apache.org/) - Servlet Container
+* Spring MVC style
 * REST style web service
 
 
