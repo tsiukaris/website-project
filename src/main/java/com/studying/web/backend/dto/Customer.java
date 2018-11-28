@@ -25,7 +25,7 @@ public class Customer {
 
 
     @OneToMany(cascade = CascadeType.ALL, fetch = FetchType.EAGER, mappedBy = "customer")
-    private List<Orders> orders = new ArrayList<Orders>();
+    private List<Orders> orders = new ArrayList<>();
 
     public Customer(String firstname, String lastname, String email, String password, String phonenumber) {
         this.firstname = firstname;

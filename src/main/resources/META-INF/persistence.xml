@@ -10,7 +10,6 @@
         <!--<provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>-->
         <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
         <class>com.studying.web.backend.dto.Customer</class>
-        <!--<class>src.entities.StudentAddress</class>-->
         <class>com.studying.web.backend.dto.Product</class>
         <class>com.studying.web.backend.dto.Orders</class>
         <class>com.studying.web.backend.dto.OrderedProduct</class>

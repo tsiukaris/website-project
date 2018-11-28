@@ -12,20 +12,6 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 public class WebApplication {
 
     public static void main(String[] args) {
-
-//		EntityManagerFactory emf = Persistence.createEntityManagerFactory("1");
-//		EntityManager em = emf.createEntityManager();
-//		EntityTransaction et = em.getTransaction();
-//		et.begin();
-//		em.persist(phone);
-//		em.persist(pen);
-//		em.persist(apple);
-//		em.persist(tesla);
-//		em.persist(andrew);
-//		em.persist(clementine);
-//		et.commit();
-//		em.close();
-//		emf.close();
         SpringApplication.run(WebApplication.class, args);
     }
 
