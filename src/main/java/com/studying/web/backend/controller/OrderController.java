@@ -36,42 +36,6 @@ public class OrderController {
 
     @PostMapping("/api/newOrder/{customerid}")
     public String createNewOrder(@PathVariable int customerid, @RequestBody Map<String, Integer> mapOfProductIdAndQuantity){
-
-        Orders order = new Orders();
-        OrderedProduct[] orderedProducts = new OrderedProduct[mapOfProductIdAndQuantity.size()];
-        List<OrderedProduct> ordProdList = new ArrayList<>();
-        Customer customer;
-        Product product;
-
-        int productId = 0;
-        customer = customerRepository.findById(customerid).get();
-        try{
-            int j = 0;
-            order.setCustomer(customer);
-
-            for(Map.Entry<String, Integer> entry: mapOfProductIdAndQuantity.entrySet()){
-                orderedProducts[j] = new OrderedProduct();
-                productId = Integer.parseInt(entry.getKey());
-                product = productRepository.findById(productId).get();
-                orderedProducts[j].setQuantity(entry.getValue());
-                orderedProducts[j].setProduct(product);
-                orderedProducts[j].setOrders(order);
-
-                ordProdList.add(orderedProducts[j]);
-                j++;
-            }
-        } catch (NoSuchElementException e){
-            System.out.println("Customer or product not found by Id" + customerid + "and product id" + productId);
-        }
-
-        order.setOrderedProductList(ordProdList);
-        List<Orders> ordersList = customer.getOrders();
-        ordersList.add(order);
-        customer.setOrders(ordersList);
-        customerRepository.save(customer);
-        String UrlToCustomerOrders = "http://localhost:8080/api/customers/" + customerid + "/orders";
-
-        return UrlToCustomerOrders;
-        /*Redirect to clients*/
+        return orderRepository.createNewOrder(customerid, mapOfProductIdAndQuantity);
     }
 }
